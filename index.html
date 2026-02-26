@@ -156,36 +156,35 @@ button:hover{
 
 </section>
 
-<section id="contact">
-<h2>Contact Me</h2>
+ <section id="contact">
+    <h2>Contact Me</h2>
 
-<form class="contact"
-action=""
-method="POST"
-onsubmit="showMsg()">
+    <form class="contact" onsubmit="showMsg(event)">
 
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Message" required></textarea>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Message" required></textarea>
 
-<button type="submit">Send Message</button>
-</form>
+      <button type="submit">Send Message</button>
+    </form>
 
-<p id="msg"></p>
-</section>
+    <p id="msg"></p>
+  </section>
 
+  <footer>
+    <p>© 2026 Copyright Kurmi💌</p>
+  </footer>
 
-<footer>
-<p>© 2026 Copyright Kurmi💌</p>
-</footer>
+  <script>
+    function showMsg(event) {
+      event.preventDefault();
 
-<script>
-function showMsg(){
- document.getElementById('msg').innerText =
- "Message sent successfully 💌 I'll reply soon!";
-}
-</script>
+      document.getElementById("msg").innerText =
+        "Message sent successfully 💌 I'll reply soon!";
+    }
+  </script>
 
 </body>
 </html>
+
 
