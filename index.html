@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MyPortfolio</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#fff0f5;color:#333}
+
+header{
+  background:linear-gradient(135deg,#ff9ecb,#ffc3d9);
+  padding:25px;
+  text-align:center;
+  color:white;
+  position:sticky;
+  top:0;
+}
+
+nav a{
+  color:white;
+  margin:0 12px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.hero{
+  text-align:center;
+  padding:50px 20px;
+}
+
+.hero img{
+  width:170px;
+  height:170px;
+  border-radius:50%;
+  object-fit:cover;
+  border:5px solid #ff9ecb;
+  margin-bottom:20px;
+}
+
+section{
+  padding:50px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+h2{
+  margin-bottom:20px;
+  color:#e75480;
+}
+
+.skills span{
+  display:inline-block;
+  padding:8px 16px;
+  margin:6px;
+  background:#ff9ecb;
+  color:white;
+  border-radius:20px;
+}
+
+.project{
+  background:white;
+  padding:20px;
+  margin:15px 0;
+  border-radius:12px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.contact input,.contact textarea{
+  width:100%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:6px;
+  border:1px solid #ddd;
+}
+
+button{
+  background:#ff77a9;
+  border:none;
+  color:white;
+  padding:12px 25px;
+  border-radius:25px;
+  cursor:pointer;
+}
+
+footer{
+  text-align:center;
+  background:#ff9ecb;
+  color:white;
+  padding:20px;
+  margin-top:40px;
+}
+button:hover{
+ background:#e75480;
+ transform:scale(1.05);
+ transition:0.3s;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Deepika Chauhan</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#edu">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<img src="Deepika_formal.jpg" alt="Deepu Photo">
+<h2>Software Developer ✨</h2>
+<p>BCA Final Year Student Passionate about Coding.</p>
+</div>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I love creating beautiful websites, exploring new technologies, and building creative projects. I'm currently improving my development skills and preparing for professional opportunities.</p>
+</section>
+
+<section id="edu">
+<h2>Education</h2>
+<p>RKGIT Ghaziabad(BCA Final Year)</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<span>HTML</span>
+<span>CSS</span>
+<span>JavaScript</span>
+<span>Python</span>
+<span>Java</span>
+<span>MySQL</span>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="project">
+<h3>Hotel Management System</h3>
+<p>Website project for hotel booking and management using HTML, CSS, JavaScript.</p>
+</div>
+
+<div class="project">
+<h3>Personal Portfolio</h3>
+<p>Responsive portfolio website showcasing my skills and projects.</p>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+
+<form class="contact"
+action="https://formspree.io/f/shivkumarverma408@gmail.com"
+method="POST"
+onsubmit="showMsg()">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Message" required></textarea>
+
+<button type="submit">Send Message</button>
+</form>
+
+<p id="msg"></p>
+</section>
+
+
+<footer>
+<p>© 2026 Copyright Kurmi💌</p>
+</footer>
+
+<script>
+function showMsg(){
+ document.getElementById('msg').innerText =
+ "Message sent successfully 💌 I'll reply soon!";
+}
+</script>
+
+</body>
+</html>
