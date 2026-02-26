@@ -156,11 +156,11 @@ button:hover{
 
 </section>
 
- <section id="contact">
+
+  <section id="contact">
     <h2>Contact Me</h2>
 
     <form class="contact" onsubmit="showMsg(event)">
-
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Message" required></textarea>
@@ -179,12 +179,20 @@ button:hover{
     function showMsg(event) {
       event.preventDefault();
 
-      document.getElementById("msg").innerText =
-        "Message sent successfully 💌 I'll reply soon!";
+      const msg = document.getElementById("msg");
+
+      msg.innerText = ""; // clear old message
+
+      setTimeout(() => {
+        msg.innerText =
+          "Message sent successfully 💌 I'll reply soon!";
+      }, 50);
+
+      event.target.reset();
     }
   </script>
-
 </body>
 </html>
+
 
 
